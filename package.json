@@ -1,21 +1,21 @@
 {
-  "name": "team-9-project",
+  "name": "nyt-news",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Khavkin.github.io/team-9-project",
+  "homepage": "https://AnastasiaMosevych.github.io/nyt-news",
   "scripts": {
     "start": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /team-9-project/"
+    "build": "parcel build src/*.html --public-url /nyt-news/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Khavkin/team-9-project.git"
+    "url": "git+https://github.com/AnastasiaMosevych/nyt-news.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Khavkin/team-9-project/issues"
+    "url": "https://github.com/AnastasiaMosevych/nyt-news/issues"
   },
   "dependencies": {
     "debounce": "^1.2.1",
