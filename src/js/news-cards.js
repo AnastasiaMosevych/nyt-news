@@ -10,9 +10,6 @@ import icons from '../images/icons.svg';
 import defaultImg from '../images/defaultImg.jpg';
 import { getMedia, normalizeImportFileName } from './utils';
 
-//console.log('!!!Debug news-card!!! icons', icons);
-//console.log('!!!Debug news-card!!! icons', defaultImg);
-
 const bodyEl = document.querySelector('[data-name="home"]');
 const ulEl = document.querySelector('.list-news-card');
 const iconsURL = normalizeImportFileName(icons); //icons.slice(0, icons.indexOf('?'));
@@ -278,11 +275,10 @@ function createMarkup2({
     isfavorite,
     isread,
 }) {
-    //console.log('CreateMarkup2');
     const mediaUrl = image !== '' ? image : defaultImgURL;
 
+
     const getDataLocalStorage = localStorage.getItem({ uri });
-    //console.dir()
 
     let useText = `<use  href="${iconsURL}#icon-favorite" data-favorite class=" color-svg1"></use>
     <use  href="${iconsURL}#icon-favorite-filled" data-favorite class=" color-svg2 hidden"></use>`;
