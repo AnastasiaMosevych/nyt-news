@@ -1,12 +1,12 @@
 # News App
 
-Welcome! This project's aim is to provide users with breaking news in a fast and
-easy way. It solves the problem of searching for important news on different
-websites and not knowing what website to choose. On the news app you can find
-news from a serious source NYTimes sorted after date and category. You can also
-like articles and they will appear on your Favorite page where you'll have
-access to them. You will be able to remove articles from favorites. After you've
-read an article, it will appear on your Read page.
+Welcome to the News App! This project's aim is to provide users with breaking
+news in a fast and easy way. It solves the problem of searching for important
+news on different websites and not knowing what website to choose. On the news
+app you can find news from a serious source NYTimes sorted after date and
+category. You can also like articles and they will appear on your Favorite page
+where you'll have access to them. You will be able to remove articles from
+favorites. After you've read an article, it will appear on your Read page.
 
 This project is a training project to practice HTML, CSS and JS.
 
