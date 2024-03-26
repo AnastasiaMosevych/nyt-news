@@ -105,9 +105,6 @@ async function mostPopularNews2() {
         status: articles.status,
         num_results: articles.num_results,
     };
-
-    // console.log(response)
-
     return response;
 }
 
@@ -155,5 +152,3 @@ async function getSearchArticles2(searchQuery, pageNumber, date) {
 
     return results;
 }
-
-//getArticleByCategory2('science', 0);

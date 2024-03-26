@@ -63,7 +63,7 @@ export default class Dataset {
             this.#numResults = result.num_results;
         } else {
             console.error(
-                `Ошибка при получении популярных новостей (статус-${result.status})`
+                `Failed to get popular news (статус-${result.status})`
             );
         }
         this.#currentQuery = POPULAR;
@@ -103,9 +103,15 @@ export default class Dataset {
 
                         if (multimedia === null || multimedia.length === 0)
                             result.image = '';
-                        else
-                            result.image =
-                                multimedia[multimedia.length - 2].url;
+                        else {
+                            const formats = ['mediumThreeByTwo440', 'mediumThreeByTwo210', 'Normal']
+                            formats.forEach(format => {
+                                let temporary = multimedia.find(image => image.format === format);
+                                if (result.image === undefined && temporary !== undefined) {
+                                    result.image = temporary.url;
+                                }
+                            })
+                        }
                         return result;
                     }
                 );
@@ -119,7 +125,7 @@ export default class Dataset {
             }
         } catch (error) {
             console.error(
-                `Ошибка ${error} получения новостей по категории ${category} offset=${offset} limit=${limit}`
+                `Failed to get news by category ${category} offset=${offset} limit=${limit} with ${error}`
             );
         }
     }
@@ -175,7 +181,7 @@ export default class Dataset {
             }
         } catch (error) {
             console.error(
-                `Ошибка ${error} получения новостей по запросу ${query} page=${page} date=${date}`
+                `Failed to get news by query ${query} page=${page} date=${date} with ${error}`
             );
         }
     }
